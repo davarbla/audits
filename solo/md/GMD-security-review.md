@@ -1,6 +1,6 @@
 # Introduction
 
-A time-boxed security review of the **GMD** protocol was done by pashov, with a focus on the security aspects of the application's implementation.
+A time-boxed security review of the **GMD** protocol was done by davarbla consulting, with a focus on the security aspects of the application's implementation.
 
 # Disclaimer
 
@@ -88,7 +88,7 @@ Redesign the approach with the decimals that is hardcoded or implement it in an 
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+**davarbla consulting**: Client has fixed the issue.
 
 # [M-02] As protocol relies heavily on admin actions, single-step ownership transfer pattern is dangerous
 
@@ -110,7 +110,7 @@ Use OpenZeppelin's `Ownable2Step` instead of `Ownable`
 
 ## Discussion
 
-**pashov**: Client has acknowledged the issue.
+**davarbla consulting**: Client has acknowledged the issue.
 
 # [M-03] If `addPool` is called too many times it can brick core functionality
 
@@ -132,7 +132,7 @@ Limit the number of pools that can be added, for example to 50.
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+**davarbla consulting**: Client has fixed the issue.
 
 # [M-04] Call to `updatePoolRate` is missing
 
@@ -154,7 +154,7 @@ Call `updatePoolRate` after the `updatePool` call in `pauseReward`
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+**davarbla consulting**: Client has fixed the issue.
 
 # [M-05] Admin privilege actions can be risky for users
 
@@ -176,7 +176,7 @@ Consider using an role-based access control approach instead of a single admin r
 
 ## Discussion
 
-**pashov**: Client has acknowledged the issue.
+**davarbla consulting**: Client has acknowledged the issue.
 
 # [M-06] Token approvals & allowances management is flawed
 
@@ -198,7 +198,7 @@ Set allowance to zero after each `swaptoGLP` call for the `poolGLP` address
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+**davarbla consulting**: Client has fixed the issue.
 
 # [M-07] Inverted slippage protection approach can lead to problems
 
@@ -228,7 +228,7 @@ Think about redesigning the `leave` methods so that you make the user pay the sl
 
 ## Discussion
 
-**pashov**: Client has acknowledged the issue.
+**davarbla consulting**: Client has acknowledged the issue.
 
 # [L-01] Inconsistent input validation
 
@@ -236,7 +236,7 @@ Think about redesigning the `leave` methods so that you make the user pay the sl
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+**davarbla consulting**: Client has fixed the issue.
 
 # [L-02] Storage variable is only written to but never read from
 
@@ -244,7 +244,7 @@ The `GLPbacking` storage variable is only written to in `updateGLPbackingNeeded`
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+**davarbla consulting**: Client has fixed the issue.
 
 # [L-03] Missing parameter validation in `enter`
 
@@ -252,7 +252,7 @@ The `GLPbacking` storage variable is only written to in `updateGLPbackingNeeded`
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+**davarbla consulting**: Client has fixed the issue.
 
 # [L-04] The `IWETH` interface has a method that `WETH` does not have
 
@@ -260,7 +260,7 @@ The `safeTransfer` method is not part of the usual `IWETH` interface and is not 
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+**davarbla consulting**: Client has fixed the issue.
 
 # [L-05] Code is calling a deprecated method
 
@@ -268,7 +268,7 @@ The `safeApprove` method from the `SafeERC20` library is deprecated so it should
 
 ## Discussion
 
-**pashov**: Client has acknowledged the issue.
+**davarbla consulting**: Client has acknowledged the issue.
 
 # [L-06] Value of slippage protection arguments is not set
 
@@ -276,7 +276,7 @@ The `swaptoGLP` method does a `mintAndStakeGlp` call that has a 0 value for both
 
 ## Discussion
 
-**pashov**: Client has acknowledged the issue.
+**davarbla consulting**: Client has acknowledged the issue.
 
 # [I-01] Using `SafeMath` when compiler is ^0.8.0
 
@@ -284,7 +284,7 @@ There is no need to use `SafeMath` when compiler is ^0.8.0 because it has built-
 
 ## Discussion
 
-**pashov**: Client has acknowledged the issue.
+**davarbla consulting**: Client has acknowledged the issue.
 
 # [I-02] `leaveETH` should not be `payable`
 
@@ -292,7 +292,7 @@ The `leaveETH` method only transfers ETH out, so `payable` keyword should be rem
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+**davarbla consulting**: Client has fixed the issue.
 
 # [I-03] Unused storage variable
 
@@ -300,7 +300,7 @@ Storage variable `gdUSDC` is unused and should be removed.
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+**davarbla consulting**: Client has fixed the issue.
 
 # [I-04] Misleading comments throughout the code
 
@@ -308,7 +308,7 @@ Almost all comments that contain the words `usdc` or `gdUSDC` in the code are mi
 
 ## Discussion
 
-**pashov**: Client has acknowledged the issue.
+**davarbla consulting**: Client has acknowledged the issue.
 
 # [I-05] Code is not properly formatted
 
@@ -316,7 +316,7 @@ Run a formatter on the code, for example use the `prettier-solidity` plugin.
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+**davarbla consulting**: Client has fixed the issue.
 
 # [I-06] NatSpec missing from external functions
 
@@ -324,7 +324,7 @@ Add NatSpec docs for all external functions so their intentions and signatures a
 
 ## Discussion
 
-**pashov**: Client has acknowledged the issue.
+**davarbla consulting**: Client has acknowledged the issue.
 
 # [I-07] Comment has no meaning
 
@@ -332,7 +332,7 @@ This comment - `// Info of each user that stakes LP tokens.` has no meaning and 
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+**davarbla consulting**: Client has fixed the issue.
 
 # [I-08] Mismatch between the filename and the contract name
 
@@ -340,7 +340,7 @@ While the file is named `final_vault.sol` the contract is named `vault` - rename
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+**davarbla consulting**: Client has fixed the issue.
 
 # [I-09] Remove unused import
 
@@ -348,7 +348,7 @@ Remove the `import "@openzeppelin/contracts/token/ERC20/ERC20.sol";` import as i
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+**davarbla consulting**: Client has fixed the issue.
 
 # [I-10] Not all `require` statements have an error string
 
@@ -356,7 +356,7 @@ Since the project is using a compiler that is newer than version 0.8.4 it is bes
 
 ## Discussion
 
-**pashov**: Client has acknowledged the issue.
+**davarbla consulting**: Client has acknowledged the issue.
 
 # [I-11] External calls can be grouped together
 
@@ -364,4 +364,4 @@ The `RewardRouter` smart contract has the `handleRewards` function, which can be
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+**davarbla consulting**: Client has fixed the issue.

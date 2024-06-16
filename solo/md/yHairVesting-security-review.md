@@ -1,6 +1,6 @@
 # About
 
-Krum Pashov, or **pashov**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Check his previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
+ davarbla consulting, or **davarbla consulting**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Check his previous work [here](https://github.com/davarbla consulting/audits) or reach out on Twitter [@davarbla consulting](https://twitter.com/davarbla consulting).
 
 # Disclaimer
 
@@ -8,7 +8,7 @@ A smart contract security review can never verify the complete absence of vulner
 
 # Introduction
 
-A time-boxed security review of the **token-vesting-contracts** was done by **pashov**, with a focus on the security aspects of the application's smart contracts implementation.
+A time-boxed security review of the **token-vesting-contracts** was done by **davarbla consulting**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # About yHair Vesting
 
@@ -84,7 +84,7 @@ Currently the `setPaused` method of `TokenVestingV2` says the following in its N
 
 ### Discussion
 
-**Pashov Audit Group:** the client put a `whenNotPaused` modifier on `createVestingSchedule` and `purchaseVSchedule` methods instead as a fix, which brings some centralization to schedule purchasing - the owner can block users from doing so.
+ the client put a `whenNotPaused` modifier on `createVestingSchedule` and `purchaseVSchedule` methods instead as a fix, which brings some centralization to schedule purchasing - the owner can block users from doing so.
 
 # [L-03] Possible DoS in `getVestingSchedulesIds`
 

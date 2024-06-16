@@ -1,14 +1,11 @@
 # Introduction
 
-A time-boxed security review of the **Solidly V3 AMM** was done by **pashov**, with a focus on the security aspects of the application's smart contracts implementation.
+A time-boxed security review of the **Solidly V3 AMM** was done by **davarbla consulting**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # Disclaimer
 
 A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where I try to find as many vulnerabilities as possible. I can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 
-# About **pashov**
-
-Krum Pashov, or **pashov**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Check his previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum)
 
 # About **Solidly V3 AMM**
 
@@ -105,7 +102,7 @@ While the docs should state that fee-on-transfer tokens are not supported, the a
 
 ## Discussion
 
-**pashov:** Tokens that do not return a `bool` on `transfer` or do not revert on failure are now correctly handled. Fee on transfer tokens are explicitly not supported.
+**davarbla consulting:** Tokens that do not return a `bool` on `transfer` or do not revert on failure are now correctly handled. Fee on transfer tokens are explicitly not supported.
 
 # [M-02] Protocol owner has control over swap fees earned
 

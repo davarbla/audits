@@ -1,6 +1,6 @@
 # Introduction
 
-A time-boxed security review of the **Hypercerts** protocol was done by **pashov**, with a focus on the security aspects of the application's implementation.
+A time-boxed security review of the **Hypercerts** protocol was done by  , with a focus on the security aspects of the application's implementation.
 
 # Disclaimer
 
@@ -141,7 +141,7 @@ Follow the Checks-Effects-Interactions pattern
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+ : Client has fixed the issue.
 
 # [H-01] Calling `splitValue` when token index is not the latest will overwrite other claims' storage
 
@@ -196,7 +196,7 @@ Change the code the following way:
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+ : Client has fixed the issue.
 
 # [M-01] Unused function parameters can lead to false assumptions on user side
 
@@ -218,7 +218,7 @@ Remove the `units` parameter from `mintClaimWithFractions` and also use `account
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+ : Client has fixed the issue.
 
 # [M-02] Input & data validation is missing or incomplete
 
@@ -241,7 +241,7 @@ Multiple methods are missing input/data validation or it is incomplete.
 
 ## Discussion
 
-**pashov**: Client has partially fixed the issue.
+ : Client has partially fixed the issue.
 
 ## Recommendations
 
@@ -253,7 +253,7 @@ The comment in the end of `SemiFungible1155` assumes constant values are saved i
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+ : Client has fixed the issue.
 
 # [L-02] Missing event and incorrect event argument
 
@@ -261,7 +261,7 @@ The `_mergeValue` method in `SemiFungible1155` does not emit an event while `_sp
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+ : Client has fixed the issue.
 
 # [L-03] Prefer two-step pattern for role transfers
 
@@ -269,7 +269,7 @@ The `Upgradeable1155` contract inherits from `OwnableUpgradeable` which uses a s
 
 ## Discussion
 
-**pashov**: Client has acknowledged the issue.
+ : Client has acknowledged the issue.
 
 # [L-04] Contracts pausability and upgradeability should be behind multi-sig or governance account
 
@@ -277,7 +277,7 @@ A compromised or a malicious owner can call `pause` and then `renounceOwnership`
 
 ## Discussion
 
-**pashov**: Client is taking measures to move into this direction.
+ : Client is taking measures to move into this direction.
 
 # [I-01] Transfer hook is not needed in current code
 
@@ -285,7 +285,7 @@ The `_beforeTokenTransfer` hook in `SemiFungible1155` is not needed as it only c
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+ : Client has fixed the issue.
 
 # [I-02] Unused import, local variable and custom errors
 
@@ -293,7 +293,7 @@ The `IERC1155ReceiverUpgradeable` import in `SemiFungible1155` is not actually u
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+Client has fixed the issue.
 
 # [I-03] Merge logic into one smart contract instead of using inheritance
 
@@ -301,7 +301,7 @@ The `SemiFungible1155` contract inherits from `Upgradeable1155` but it doesn't m
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+ : Client has fixed the issue.
 
 # [I-04] Incorrect custom error thrown
 
@@ -309,7 +309,7 @@ The code in `AllowlistMinter::_processClaim` throws `DuplicateEntry` when a leaf
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+ : Client has fixed the issue.
 
 # [I-05] Typos in comments
 
@@ -317,7 +317,7 @@ The code in `AllowlistMinter::_processClaim` throws `DuplicateEntry` when a leaf
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+ : Client has fixed the issue.
 
 # [I-06] Missing `override` keyword for interface inherited methods
 
@@ -325,7 +325,7 @@ The `HypercertMinter` contract is inheriting the `IHypercertToken` interface and
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+ : Client has fixed the issue.
 
 # [I-07] Bit-shift operations are unnecessarily complex
 
@@ -342,7 +342,7 @@ I recommend the following change for simplicity:
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+ : Client has fixed the issue.
 
 # [I-08] Redundant check in code
 
@@ -350,7 +350,7 @@ The `_beforeValueTransfer` hook in `SemiFungible1155` has the `getBaseType(_to) 
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+ : Client has fixed the issue.
 
 # [I-09] Incomplete or wrong NatSpec docs
 
@@ -358,7 +358,7 @@ The NatSpec docs on the external methods are incomplete - missing `@param`, `@re
 
 ## Discussion
 
-**pashov**: Client still hasn't fixed the issue but is setting higher priority to document the code better.
+ : Client still hasn't fixed the issue but is setting higher priority to document the code better.
 
 # [I-10] Misleading variable name
 
@@ -366,7 +366,7 @@ In the methods `mintClaim`, `mintClaimWithFractions` and `createAllowlist` the l
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+ : Client has fixed the issue.
 
 # [I-11] Solidity safe pragma best practices are not used
 
@@ -374,7 +374,7 @@ Always use a stable pragma to be certain that you deterministically compile the 
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+ : Client has fixed the issue.
 
 # [I-12] Magic numbers in the codebase
 
@@ -388,4 +388,4 @@ Extract the `253` value to a well-named constant so the intention of the number 
 
 ## Discussion
 
-**pashov**: Client has fixed the issue.
+ : Client has fixed the issue.

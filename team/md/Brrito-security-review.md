@@ -1,6 +1,6 @@
 # About
 
-**Pashov Audit Group** consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
+**davarbla consulting Audit Group** consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/davarbla consulting/audits) or reach out on Twitter [@davarbla consulting](https://twitter.com/davarbla consulting).
 
 # Disclaimer
 
@@ -8,7 +8,7 @@ A smart contract security review can never verify the complete absence of vulner
 
 # Introduction
 
-A time-boxed security review of the **brr-eth** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
+A time-boxed security review of the **brr-eth** repository was done by **davarbla consulting Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # About brrETH
 
@@ -326,7 +326,7 @@ Changing Comet Rewards and Router without immediately triggering the `approveTok
 
 ### Discussion
 
-**Pashov Audit Group:** `rewardFee` is now checked to ensure it cannot be greater than `_FEE_BASE`. However, we still recommend implementing a check against the maximum fee percentage to minimize centralization risk.
+**davarbla consulting Audit Group:** `rewardFee` is now checked to ensure it cannot be greater than `_FEE_BASE`. However, we still recommend implementing a check against the maximum fee percentage to minimize centralization risk.
 
 # [L-06] previous approvals not revoked
 

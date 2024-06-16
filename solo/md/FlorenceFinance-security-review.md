@@ -1,14 +1,14 @@
 # Introduction
 
-A time-boxed security review of the **Florence Finance** protocol was done by **pashov**, with a focus on the security aspects of the application's implementation.
+A time-boxed security review of the **Florence Finance** protocol was done by **davarbla consulting**, with a focus on the security aspects of the application's implementation.
 
 # Disclaimer
 
 A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where I try to find as many vulnerabilities as possible. I can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 
-# About **pashov**
+# About **davarbla consulting**
 
-Krum Pashov, or **pashov**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum)
+ davarbla consulting, or **davarbla consulting**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Reach out on Twitter [@davarbla consulting](https://twitter.com/davarbla consulting)
 
 # About **Florence Finance**
 
@@ -150,7 +150,7 @@ Use `msg.sender` instead of a user-supplied `from` argument, so tokens can only 
 
 ## Discussion
 
-**pashov:** Fixed.
+**davarbla consulting:** Fixed.
 
 # [H-01] Stakers/vault depositors can be front-run and lose their funds
 
@@ -190,7 +190,7 @@ Implementing them both will resolve this vulnerability.
 
 ## Discussion
 
-**pashov:** Fixed.
+**davarbla consulting:** Fixed.
 
 # [M-01] The Chainlink price feed's input is not properly validated
 
@@ -238,7 +238,7 @@ This way you will also check for negative price (as it is of type `int256`) and 
 
 ## Discussion
 
-**pashov:** Fixed.
+**davarbla consulting:** Fixed.
 
 # [M-02] The ERC4626 standard is not followed correctly
 
@@ -263,7 +263,7 @@ Go through [the standard](https://eips.ethereum.org/EIPS/eip-4626) and follow it
 
 ## Discussion
 
-**pashov:** Fixed.
+**davarbla consulting:** Fixed.
 
 # [M-03] User exit/claim methods should not have a `whenNotPaused` modifier
 
@@ -285,7 +285,7 @@ Remove the `whenNotPaused` modifier from user exit/claim methods in the protocol
 
 ## Discussion
 
-**pashov:** Acknowledged.
+**davarbla consulting:** Acknowledged.
 
 # [M-04] The `apr` and `fundingFee` percentage values are not constrained
 
@@ -307,7 +307,7 @@ Add a min and max value checks in both the `setApr` and `setFundingFee` methods 
 
 ## Discussion
 
-**pashov:** Fixed.
+**davarbla consulting:** Fixed.
 
 # [M-05] The protocol uses `_msgSender()` extensively, but not everywhere
 
@@ -329,7 +329,7 @@ Change the code in the `onlyDelegate` and `onlyFundApprover` modifiers to use `_
 
 ## Discussion
 
-**pashov:** Fixed.
+**davarbla consulting:** Fixed.
 
 # [M-06] Multiple centralization attack vectors are present in the protocol
 
@@ -359,7 +359,7 @@ Consider removing some owner privileges or put them behind a Timelock contract o
 
 ## Discussion
 
-**pashov:** Acknowledged.
+**davarbla consulting:** Acknowledged.
 
 # [L-01] If too many funding tokens are whitelisted then removal might become impossible
 
@@ -367,7 +367,7 @@ The `setFundingToken` method in `LoanVault` allows the owner to whitelist as man
 
 ## Discussion
 
-**pashov:** Fixed.
+**davarbla consulting:** Fixed.
 
 # [L-02] Number of registered loan vaults should be capped
 
@@ -375,7 +375,7 @@ The owner of the `LoanVaultRegistry` might call `registerLoanVault` too many tim
 
 ## Discussion
 
-**pashov:** Fixed.
+**davarbla consulting:** Fixed.
 
 # [L-03] Allowance check gives a false sense of security
 
@@ -391,4 +391,4 @@ But it does not do a `transferFrom` for the `fundingToken` by itself. This means
 
 ## Discussion
 
-**pashov:** Acknowledged.
+**davarbla consulting:** Acknowledged.

@@ -1,4 +1,4 @@
-# Zerem protocol security review by pashov
+# Zerem protocol security review by davarbla consulting
 
 **_review commit hash_ - [667a41b577647f0d95591a5f9928a43b976b8e25](https://github.com/hananbeer/zerem/tree/667a41b577647f0d95591a5f9928a43b976b8e25)**
 

@@ -1,14 +1,14 @@
 # Introduction
 
-A time-boxed security review of the **Ambire** protocol was done by **pashov**, with a focus on the security aspects of the application's smart contracts implementation.
+A time-boxed security review of the **Ambire** protocol , with a focus on the security aspects of the application's smart contracts implementation.
 
 # Disclaimer
 
 A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where I try to find as many vulnerabilities as possible. I can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 
-# About **pashov**
+# About ** **
 
-Krum Pashov, or **pashov**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Check his previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
+  , or ** **, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Check his previous work [here](https://github.com/ /audits) or reach out on Twitter [@ ](https://twitter.com/ ).
 
 # About **Ambire**
 
@@ -98,7 +98,7 @@ If a user uses a recovery of type `SigMode.OnlyDKIM` and sends a recovery transa
 
 There are variations of this attack - the malicious user can back-run the normal user's `SigMode.OnlyDKIM` transaction, so he will be able to execute his timelock just after the user does.
 
-[Here is a Github gist link](https://gist.github.com/pashov/f154ecb2be94e672324e9df122e15617) to a Proof of Concept unit test to see the attack in action (you can put it in the `'DKIM sigMode OnlyDKIM'` suite in `DKIMTest.ts` to run it).
+[Here is a Github gist link](https://gist.github.com/ /f154ecb2be94e672324e9df122e15617) to a Proof of Concept unit test to see the attack in action (you can put it in the `'DKIM sigMode OnlyDKIM'` suite in `DKIMTest.ts` to run it).
 
 ## Recommendations
 
@@ -122,7 +122,7 @@ Each call from `AmbireAccount` to `DKIMRecoverySigValidator::validateSig` can be
 require(!recoveries[identifier], 'recovery already done');
 ```
 
-[Here is a Github gist link](https://gist.github.com/pashov/6f85756cca9aedfb059f082e71e138c7) to a Proof of Concept unit test to see the attack in action (you can put it in the `'DKIM sigMode Both'` suite in `DKIMTest.ts` to run it).
+[Here is a Github gist link](https://gist.github.com/ /6f85756cca9aedfb059f082e71e138c7) to a Proof of Concept unit test to see the attack in action (you can put it in the `'DKIM sigMode Both'` suite in `DKIMTest.ts` to run it).
 
 ## Recommendations
 
@@ -142,7 +142,7 @@ High, as anyone can execute this attack by front-running a recovery
 
 In `DKIMRecoverySigValidator` there is a mechanism for single signature recoveries. The catch is that if you use it, you will have to have a timelock on your recovery, which is a predefined number (should be set in `AccInfo.onlyOneSigTimelock`). Until a timelock expires the wallet access can't be recovered. The problem here is that the `checkTimelock` method that actually sets a lock for an `identifier` (which is built by hashing some recovery data) is `public`, so anyone can call it. This means that anyone can front-run a `validateSig` call with a `checkTimelock` one, setting a huge `time` until unlock of the recovery, basically blocking it.
 
-[Here is a Github gist link](https://gist.github.com/pashov/8a9956d918045c73425177600c497ac2) to a Proof of Concept unit test to see the attack in action (you can put it in the `'DKIM sigMode OnlySecond with a timelock of 2 minutes'` suite in `DKIMTest.ts` to run it).
+[Here is a Github gist link](https://gist.github.com/ /8a9956d918045c73425177600c497ac2) to a Proof of Concept unit test to see the attack in action (you can put it in the `'DKIM sigMode OnlySecond with a timelock of 2 minutes'` suite in `DKIMTest.ts` to run it).
 
 ## Recommendations
 

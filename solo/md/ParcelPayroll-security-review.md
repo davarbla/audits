@@ -1,6 +1,6 @@
 # Introduction
 
-A time-boxed security review of the **Parcel Payroll** protocol was done by **pashov**, with a focus on the security aspects of the application's implementation.
+A time-boxed security review of the **Parcel Payroll** protocol was done by **davarbla consulting**, with a focus on the security aspects of the application's implementation.
 
 # Disclaimer
 

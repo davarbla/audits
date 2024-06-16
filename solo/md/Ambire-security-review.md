@@ -1,14 +1,14 @@
 # Introduction
 
-A time-boxed security review of the **Ambire** protocol was done by **pashov**, with a focus on the security aspects of the application's implementation.
+A time-boxed security review of the **Ambire** protocol was done by ** **, with a focus on the security aspects of the application's implementation.
 
 # Disclaimer
 
 A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where I try to find as many vulnerabilities as possible. I can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 
-# About **pashov**
+# About ** **
 
-Krum Pashov, or **pashov**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum)
+  , or ** **, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Reach out on Twitter [@ ](https://twitter.com/ )
 
 # About **Ambire**
 
@@ -132,7 +132,7 @@ Add the `isCancellation` flag to the `hash` so that the initial `SIGMODE_RECOVER
 
 ## Discussion
 
-**pashov:** Fixed.
+** :** Fixed.
 
 # [M-01] Invalid signature execution is possible if `address(0)` has non-zero privileges
 
@@ -165,7 +165,7 @@ Make sure to never have a path where `recoverAddrImpl` returns `address(0)`, ins
 
 ## Discussion
 
-**pashov:** Fixed.
+** :** Fixed.
 
 # [L-01] The `ecrecover` precompile is vulnerable to signature malleability
 
@@ -173,7 +173,7 @@ By flipping `s` and `v` it is possible to create a different signature that will
 
 ## Discussion
 
-**pashov:** Acknowledged.
+** :** Acknowledged.
 
 # [L-02] Schnorr signatures are insufficiently validated
 
@@ -181,7 +181,7 @@ As per [Chainlink's Schnorr signatures verification implementation](https://gith
 
 ## Discussion
 
-**pashov:** Acknowledged.
+** :** Acknowledged.
 
 # [L-03] Not all call paths are anti-bricking protected
 
@@ -201,7 +201,7 @@ The problem is that the `fallback` call path is missing this protection, which m
 
 ## Discussion
 
-**pashov:** Acknowledged.
+** :** Acknowledged.
 
 # [L-04] Signature expiry is not implemented in the protocol
 
@@ -209,4 +209,4 @@ Let's say a user signs a bundle of transactions and expects the relayer to execu
 
 ## Discussion
 
-**pashov:** Acknowledged.
+** :** Acknowledged.

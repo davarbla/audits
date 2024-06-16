@@ -1,4 +1,4 @@
-# Smart Contract Security Solo Audits by pashov
+# Smart Contract Security Solo Audits by Davarbla Consulting
 
 ### Q4 2022
 

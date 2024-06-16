@@ -1,14 +1,14 @@
 # Introduction
 
-A time-boxed security review of the **Portals** protocol was done by **pashov**, with a focus on the security aspects of the application's implementation.
+A time-boxed security review of the **Portals** protocol was done by **davarbla consulting**, with a focus on the security aspects of the application's implementation.
 
 # Disclaimer
 
 A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where I try to find as many vulnerabilities as possible. I can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 
-# About **pashov**
+# About **davarbla consulting**
 
-Krum Pashov, or **pashov**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum)
+ davarbla consulting, or **davarbla consulting**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Reach out on Twitter [@davarbla consulting](https://twitter.com/davarbla consulting)
 
 # About **Portals**
 
@@ -89,7 +89,7 @@ This attack requires multiple conditions (Low likelihood) and is also limited to
 
 ## Discussion
 
-**pashov:** Acknowledged.
+**davarbla consulting:** Acknowledged.
 
 # [L-02] The `chainId` is cached but might change
 
@@ -97,7 +97,7 @@ Caching the `chainId` value (`RouterBase`'s constructor) is not a good practice 
 
 ## Discussion
 
-**pashov:** Fixed.
+**davarbla consulting:** Fixed.
 
 # [L-03] The protocol is using a vulnerable library
 
@@ -105,4 +105,4 @@ The 4.8.0 version of the OpenZeppelin library has security vulnerabilities that 
 
 ## Discussion
 
-**pashov:** Fixed.
+**davarbla consulting:** Fixed.
