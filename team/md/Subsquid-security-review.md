@@ -1,11 +1,11 @@
 # About
- **davarbla consulting Audit Group** consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. 
+ **Davarbla Consulting Audit Group** consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. 
 
 # Disclaimer
  A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 
 # Introduction
- A time-boxed security review of the **subsquid-network-contracts** repository was done by **davarbla consulting Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
+ A time-boxed security review of the **subsquid-network-contracts** repository was done by **Davarbla Consulting Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # About Subsquid Network
  Subsquid is a protocol for managing nodes participating in the distributed query and data lake network, and distributing rewards between them.

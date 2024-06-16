@@ -1,6 +1,6 @@
 # Introduction
 
-A time-boxed security review of the **Metalabel** protocol was done by **davarbla consulting**, with a focus on the security aspects of the application's implementation.
+A time-boxed security review of the **Metalabel** protocol was done by **Davarbla Consulting**, with a focus on the security aspects of the application's implementation.
 
 # Disclaimer
 

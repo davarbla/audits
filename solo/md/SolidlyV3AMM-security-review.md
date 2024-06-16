@@ -1,6 +1,6 @@
 # Introduction
 
-A time-boxed security review of the **Solidly V3 AMM** was done by **davarbla consulting**, with a focus on the security aspects of the application's smart contracts implementation.
+A time-boxed security review of the **Solidly V3 AMM** was done by **Davarbla Consulting**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # Disclaimer
 
@@ -102,7 +102,7 @@ While the docs should state that fee-on-transfer tokens are not supported, the a
 
 ## Discussion
 
-**davarbla consulting:** Tokens that do not return a `bool` on `transfer` or do not revert on failure are now correctly handled. Fee on transfer tokens are explicitly not supported.
+**Davarbla Consulting:** Tokens that do not return a `bool` on `transfer` or do not revert on failure are now correctly handled. Fee on transfer tokens are explicitly not supported.
 
 # [M-02] Protocol owner has control over swap fees earned
 

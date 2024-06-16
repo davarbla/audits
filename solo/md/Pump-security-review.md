@@ -1,6 +1,6 @@
 # Introduction
 
-A time-boxed security review of the **Pump** protocol was done by **davarbla consulting**, with a focus on the security aspects of the application's smart contracts implementation.
+A time-boxed security review of the **Pump** protocol was done by **Davarbla Consulting**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # Disclaimer
 

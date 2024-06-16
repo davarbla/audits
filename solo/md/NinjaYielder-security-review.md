@@ -1,4 +1,4 @@
-# Ninja Yield protocol security review by davarbla consulting
+# Ninja Yield protocol security review by Davarbla Consulting
 
 *********************review commit hash -********************* **[9e9367120d45fdd6144328964fabb8f57610661c](https://github.com/0xTK421/ninja-core-contracts/tree/9e9367120d45fdd6144328964fabb8f57610661c)**
 

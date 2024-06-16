@@ -1,6 +1,6 @@
 # Introduction
 
-A time-boxed security review of the **Lumin** protocol was done by **davarbla consulting**, with a focus on the security aspects of the application's smart contracts implementation.
+A time-boxed security review of the **Lumin** protocol was done by **Davarbla Consulting**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # Disclaimer
 
@@ -341,7 +341,7 @@ Finally, check the timestamp value of the `latestRoundData` call and make sure i
 
 ## Discussion
 
-**davarbla consulting:** Partially fixed, excluding the price staleness check.
+**Davarbla Consulting:** Partially fixed, excluding the price staleness check.
 
 # [M-04] Lumin admin can exploit user allowances to the protocol
 

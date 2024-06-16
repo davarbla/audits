@@ -5,7 +5,7 @@ A smart contract security review can never verify the complete absence of vulner
 
 # Introduction
 
-A time-boxed security review of the **FydeTreasury/core-refactored** repository was done by **davarbla consulting Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
+A time-boxed security review of the **FydeTreasury/core-refactored** repository was done by **Davarbla Consulting Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # About Fyde
 

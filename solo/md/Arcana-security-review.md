@@ -1,4 +1,4 @@
-# Arcana protocol security review by davarbla consulting
+# Arcana protocol security review by Davarbla Consulting
 
 ***review commit hash* - [51fc65fdd6474c9632975294c560ddee24135f2f](https://github.com/Prominence-Games/arcana-foundry-erc721a/tree/51fc65fdd6474c9632975294c560ddee24135f2f)**
 

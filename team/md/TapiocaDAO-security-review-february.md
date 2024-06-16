@@ -5,7 +5,7 @@ A smart contract security review can never verify the complete absence of vulner
 
 # Introduction
 
-A time-boxed security review of the **tapioca-periph, tapioca-yieldbox-strategies, Tapioca-bar** and **PermitC** repositories are done by **davarbla consulting Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
+A time-boxed security review of the **tapioca-periph, tapioca-yieldbox-strategies, Tapioca-bar** and **PermitC** repositories are done by **Davarbla Consulting Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # About TapiocaDAO
 

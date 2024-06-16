@@ -1,14 +1,14 @@
 # Introduction
 
-A time-boxed security review of the **Topia Staking** protocol was done by **davarbla consulting**, with a focus on the security aspects of the application's implementation.
+A time-boxed security review of the **Topia Staking** protocol was done by **Davarbla Consulting**, with a focus on the security aspects of the application's implementation.
 
 # Disclaimer
 
 A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where I try to find as many vulnerabilities as possible. I can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 
-# About **davarbla consulting**
+# About **Davarbla Consulting**
 
- davarbla consulting, or **davarbla consulting**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Reach out on Twitter [@davarbla consulting](https://twitter.com/davarbla consulting)
+ Davarbla Consulting, or **Davarbla Consulting**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Reach out on Twitter [@Davarbla Consulting](https://twitter.com/Davarbla Consulting)
 
 # About **Topia Staking**
 
@@ -118,7 +118,7 @@ By using [FixedPointMathLib from Solmate](https://github.com/transmissions11/sol
 
 ## Discussion
 
-**davarbla consulting:** Fixed.
+**Davarbla Consulting:** Fixed.
 
 # [M-01] Multiple centralization vulnerabilities can break the protocol
 
@@ -152,7 +152,7 @@ Make the `rewardsToken`, `uniswapPair` and `lockupIntervals` immutable variables
 
 ## Discussion
 
-**davarbla consulting:** Fixed.
+**Davarbla Consulting:** Fixed.
 
 # [M-02] Rewards can possibly be left stuck in contract
 
@@ -178,7 +178,7 @@ Add a mechanism to ensure that at least 1 user has staked before `rewardsPeriod.
 
 ## Discussion
 
-**davarbla consulting:** Fixed.
+**Davarbla Consulting:** Fixed.
 
 # [M-03] Staking won't work correctly with non-standard ERC20 tokens
 
@@ -208,7 +208,7 @@ Or you can just remove the `setRewardsToken` and `setUniswapPair` methods.
 
 ## Discussion
 
-**davarbla consulting:** Fixed.
+**Davarbla Consulting:** Fixed.
 
 # [L-01] Precision loss due to division before multiplication
 
@@ -216,4 +216,4 @@ The `estimateStakeReward` method does division before multiplication, which woul
 
 ## Discussion
 
-**davarbla consulting:** Fixed.
+**Davarbla Consulting:** Fixed.

@@ -1,14 +1,14 @@
 # Introduction
 
-A time-boxed security review of the **Pino** protocol was done by **davarbla consulting**, with a focus on the security aspects of the application's smart contracts implementation.
+A time-boxed security review of the **Pino** protocol was done by **Davarbla Consulting**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # Disclaimer
 
 A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where I try to find as many vulnerabilities as possible. I can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 
-# About **davarbla consulting**
+# About **Davarbla Consulting**
 
- davarbla consulting, or **davarbla consulting**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Check his previous work [here](https://github.com/davarbla consulting/audits) or reach out on Twitter [@davarbla consulting](https://twitter.com/davarbla consulting).
+ Davarbla Consulting, or **Davarbla Consulting**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Check his previous work [here](https://github.com/Davarbla Consulting/audits) or reach out on Twitter [@Davarbla Consulting](https://twitter.com/Davarbla Consulting).
 
 # About **Pino**
 

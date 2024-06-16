@@ -1,6 +1,6 @@
 # About
 
-davarbla consulting Audit Group consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. 
+Davarbla Consulting Audit Group consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. 
 
 # Disclaimer
 
@@ -8,7 +8,7 @@ A smart contract security review can never verify the complete absence of vulner
 
 # Introduction
 
-A time-boxed security review of the **pupniks-contract** repository was done by **davarbla consulting Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
+A time-boxed security review of the **pupniks-contract** repository was done by **Davarbla Consulting Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # About Pupniks
 

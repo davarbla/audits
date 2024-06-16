@@ -1,14 +1,14 @@
 # Introduction
 
-A time-boxed security review of the **Molecule Vesting** protocol was done by **davarbla consulting**, with a focus on the security aspects of the application's implementation.
+A time-boxed security review of the **Molecule Vesting** protocol was done by **Davarbla Consulting**, with a focus on the security aspects of the application's implementation.
 
 # Disclaimer
 
 A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where I try to find as many vulnerabilities as possible. I can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 
-# About **davarbla consulting**
+# About **Davarbla Consulting**
 
- davarbla consulting, or **davarbla consulting**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Reach out on Twitter [@davarbla consulting](https://twitter.com/davarbla consulting)
+ Davarbla Consulting, or **Davarbla Consulting**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Reach out on Twitter [@Davarbla Consulting](https://twitter.com/Davarbla Consulting)
 
 # About **Molecule Vesting**
 
@@ -113,7 +113,7 @@ Use the [Pull over Push](https://fravoll.github.io/solidity-patterns/pull_over_p
 
 ## Discussion
 
-**davarbla consulting:** Acknowledged, as the team listed in the protocol docs that such tokens won't be supported.
+**Davarbla Consulting:** Acknowledged, as the team listed in the protocol docs that such tokens won't be supported.
 
 # [M-02] Insufficient input validation in function `createVestingSchedule`
 
@@ -140,7 +140,7 @@ Add sensible lower and upper bounds for all arguments of the `createVestingSched
 
 ## Discussion
 
-**davarbla consulting:** Fixed in [8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f](https://github.com/moleculeprotocol/token-vesting-contract/commit/8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f).
+**Davarbla Consulting:** Fixed in [8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f](https://github.com/moleculeprotocol/token-vesting-contract/commit/8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f).
 
 # [M-03] Contract can receive ETH but has no withdraw function for it
 
@@ -162,7 +162,7 @@ Remove the `receive` and `fallback` functions since the ETH balance is not used 
 
 ## Discussion
 
-**davarbla consulting:** Fixed in [8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f](https://github.com/moleculeprotocol/token-vesting-contract/commit/8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f).
+**Davarbla Consulting:** Fixed in [8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f](https://github.com/moleculeprotocol/token-vesting-contract/commit/8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f).
 
 # [M-04] Users won't be able to claim vested tokens when contract is paused
 
@@ -190,7 +190,7 @@ Remove the `whenNotPaused` modifier from `releaseAvailableTokensForHolder`, so u
 
 ## Discussion
 
-**davarbla consulting:** Fixed in [8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f](https://github.com/moleculeprotocol/token-vesting-contract/commit/8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f).
+**Davarbla Consulting:** Fixed in [8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f](https://github.com/moleculeprotocol/token-vesting-contract/commit/8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f).
 
 # [L-01] Limit the max size of the `vestingSchedulesIds` array and `holdersVestingScheduleCount`
 
@@ -198,7 +198,7 @@ If too many vesting schedules are added for a user it is possible that the `getV
 
 ## Discussion
 
-**davarbla consulting:** Fixed in [8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f](https://github.com/moleculeprotocol/token-vesting-contract/commit/8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f).
+**Davarbla Consulting:** Fixed in [8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f](https://github.com/moleculeprotocol/token-vesting-contract/commit/8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f).
 
 # [L-02] The `onlyIfVestingScheduleNotRevoked` modifier will not revert even if the given `vestingScheduleId` is non-existent
 
@@ -206,4 +206,4 @@ The modifier will pass successfully when the `vestingScheduleId` passed is of a 
 
 ## Discussion
 
-**davarbla consulting:** Fixed in [8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f](https://github.com/moleculeprotocol/token-vesting-contract/commit/8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f).
+**Davarbla Consulting:** Fixed in [8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f](https://github.com/moleculeprotocol/token-vesting-contract/commit/8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f).
