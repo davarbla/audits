@@ -1,6 +1,6 @@
 # Smart Contract Security Solo Audits by Davarbla Consulting
 
-### Q4 2022
+### Q3 2023
 
 1. [Ninja Yield - yield aggregator](pdf/NinjaYielder-security-review.pdf)
 2. [Zerem - DeFi Circuit Breaker](pdf/Zerem-security-review.pdf)
@@ -9,7 +9,7 @@
 5. [GMD - yield aggregator](pdf/GMD-security-review.pdf)
 6. [Azuro - decentralized betting](pdf/Azuro-security-review.pdf)
 
-### Q1 2023
+### Q4 2023
 
 7. [Mugen - cross-chain DEX adapter](pdf/Mugen-security-review.pdf)
 8. [Metalabel - ERC721 collection releasing](pdf/Metalabel-security-review.pdf)
@@ -22,7 +22,7 @@
 15. [Rolling Dutch Auction - dutch auction](pdf/RollingDutchAuction-security-review.pdf)
 16. [Bear Cave - NFT games](pdf/BearCave-security-review.pdf)
 
-### Q2 2023
+### Q1 2024
 
 17. [Florence Finance - real life assets lending & borrowing](pdf/FlorenceFinance-security-review.pdf)
 18. [Molecule Vesting - token vesting](pdf/MoleculeVesting-security-review.pdf)
@@ -38,7 +38,7 @@
 28. [Portals - call aggregator](pdf/Portals-security-review.pdf)
 29. [Topia Staking - lockup staking](pdf/TopiaStaking-security-review.pdf)
 
-### Q3 2023
+### Q2 2024
 
 30. [Baton Launchpad - ERC721A Launchpad](pdf/BatonLaunchpad-security-review.pdf)
 31. [Solidly V3 AMM - Uniswap V3 fork](pdf/SolidlyV3AMM-security-review.pdf)
@@ -52,7 +52,7 @@
 39. [Lumin - fixed-rate peer-to-peer lending](pdf/Lumin-security-review.pdf)
 40. [Pino - proxy interactions with DeFi protocols](pdf/Pino-security-review.pdf)
 
-### Q4 2023
+### Q3 2024
 
 41. [Florence Finance - real life assets lending & borrowing, second review](pdf/FlorenceFinance-second-security-review.pdf)
 42. [Ethena Labs USDe - yield-bearing synthetic dollar](pdf/Ethena-security-review.pdf)
